@@ -1,4 +1,4 @@
-package com.example.testtask
+package com.example.testtask.Activity
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -7,6 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import com.bumptech.glide.Glide
+import com.example.testtask.APi.DataUserModel.DataModel
+import com.example.testtask.R
 
 class UserProfileActivity : ComponentActivity() {
 

@@ -1,4 +1,4 @@
-package com.example.testtask
+package com.example.testtask.APi.DataUserModel
 
 import java.io.Serializable
 

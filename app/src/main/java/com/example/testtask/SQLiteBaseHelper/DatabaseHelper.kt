@@ -1,4 +1,4 @@
-package com.example.testtask
+package com.example.testtask.SQLiteBaseHelper
 
 import android.content.ContentValues
 import android.content.Context
@@ -6,6 +6,19 @@ import android.database.SQLException
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
+import com.example.testtask.APi.DataUserModel.Coordinates
+import com.example.testtask.APi.DataUserModel.DataModel
+import com.example.testtask.APi.DataUserModel.Dob
+import com.example.testtask.APi.DataUserModel.Id
+import com.example.testtask.APi.DataUserModel.Info
+import com.example.testtask.APi.DataUserModel.Location
+import com.example.testtask.APi.DataUserModel.Login
+import com.example.testtask.APi.DataUserModel.Name
+import com.example.testtask.APi.DataUserModel.Picture
+import com.example.testtask.APi.DataUserModel.Registered
+import com.example.testtask.APi.DataUserModel.Result
+import com.example.testtask.APi.DataUserModel.Street
+import com.example.testtask.APi.DataUserModel.Timezone
 
 class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
 
@@ -186,6 +199,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
 
                 val dataModel = DataModel(listOf(result), info)
                 userList.add(dataModel)
+
             } while (cursor.moveToNext())
         }
 

@@ -1,4 +1,4 @@
-package com.example.testtask
+package com.example.testtask.RecycleView
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -9,6 +9,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.testtask.APi.DataUserModel.DataModel
+import com.example.testtask.Activity.UserProfileActivity
+import com.example.testtask.R
 
 class RecycleViewAdapter(private val dataList: List<DataModel>) : RecyclerView.Adapter<RecycleViewAdapter.MyViewHolder>() {
 
@@ -37,7 +40,7 @@ class RecycleViewAdapter(private val dataList: List<DataModel>) : RecyclerView.A
 
         holder.phoneNumberTextView.text = person.results[0].phone
         Glide.with(holder.itemView.context)
-            .load(person.results[0].picture.medium)
+            .load(person.results[0].picture.thumbnail)
             .into(holder.photoImageView)
 
         holder.itemView.setOnClickListener {

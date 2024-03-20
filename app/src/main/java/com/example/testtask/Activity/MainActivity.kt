@@ -1,4 +1,4 @@
-package com.example.testtask
+package com.example.testtask.Activity
 
 import android.os.Bundle
 import android.view.View
@@ -7,6 +7,11 @@ import android.widget.ProgressBar
 import androidx.activity.ComponentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.testtask.APi.ApiCall
+import com.example.testtask.APi.DataUserModel.DataModel
+import com.example.testtask.R
+import com.example.testtask.RecycleView.RecycleViewAdapter
+import com.example.testtask.SQLiteBaseHelper.DatabaseHelper
 
 
 class MainActivity : ComponentActivity() {

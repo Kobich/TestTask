@@ -1,6 +1,7 @@
-package com.example.testtask
+package com.example.testtask.APi
 import android.content.Context
 import android.widget.Toast
+import com.example.testtask.APi.DataUserModel.DataModel
 import retrofit.*
 
 class ApiCall {

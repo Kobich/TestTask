@@ -1,5 +1,6 @@
-package com.example.testtask
+package com.example.testtask.APi
 
+import com.example.testtask.APi.DataUserModel.DataModel
 import retrofit.Call
 import retrofit.http.GET
 
