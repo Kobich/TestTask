@@ -52,7 +52,7 @@ class UserProfileActivity : ComponentActivity() {
 
         // Загрузка изображения профиля с помощью Glide
         Glide.with(this)
-            .load(person.results[0].picture.large)
+            .load(person.results[0].picture.thumbnail)
             .into(profilePictureImageView)
     }
 
